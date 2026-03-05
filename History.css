@@ -1,0 +1,130 @@
+.history-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #ffffff, #ffe6e6);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.history-card {
+  background: #fff;
+  border: 2px solid #ff4d4d;
+  border-radius: 25px;
+  box-shadow: 0 8px 24px rgba(255, 0, 0, 0.15);
+  padding: 30px;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.history-card:hover {
+  transform: translateY(-4px);
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.title {
+  color: #cc0000;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.clear-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.clear-btn:hover {
+  background-color: #cc0000;
+}
+
+.clear-btn:disabled {
+  background-color: #ffb3b3;
+  cursor: not-allowed;
+}
+
+.loading,
+.empty {
+  color: #777;
+  font-size: 1rem;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.history-table thead {
+  background: #ff4d4d;
+  color: white;
+}
+
+.history-table th,
+.history-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ffb3b3;
+  vertical-align: top;
+}
+
+.history-table tbody tr:hover {
+  background-color: #fff5f5;
+}
+
+.high-row {
+  background-color: #ffecec;
+}
+
+.low-row {
+  background-color: #f3fff3;
+}
+
+.input-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.input-list li {
+  margin-bottom: 4px;
+  color: #444;
+}
+
+.output {
+  text-align: left;
+}
+
+.pdf-btn {
+  display: inline-block;
+  background: #ff4d4d;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pdf-btn:hover {
+  background: #cc0000;
+}
